@@ -1,0 +1,11 @@
+<h2>Add Employee</h2>
+
+<form>
+  <label>First Name: <input [(ngModel)]="firstName" name="firstName"/></label><br>
+  <label>Last Name: <input [(ngModel)]="lastName" name="lastName" /></label><br>
+  <label>Email: <input [(ngModel)]="email" name="email"/></label><br>
+  <label>Position: <input [(ngModel)]="position" name="position"/></label><br>
+  <label>Department: <input [(ngModel)]="department" name="department"/></label><br>
+
+  <button type="button" (click)="addEmployee()">Add Employee</button>
+</form>

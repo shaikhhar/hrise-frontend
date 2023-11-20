@@ -1,0 +1,13 @@
+<h2>Edit Employee</h2>
+
+<div *ngIf="employee">
+  <form>
+    <label>First Name: <input [(ngModel)]="employee.firstName" name="firstName"/></label><br>
+    <label>Last Name: <input [(ngModel)]="employee.lastName" name="lastName"/></label><br>
+    <label>Email: <input [(ngModel)]="employee.email" name="email"/></label><br>
+    <label>Position: <input [(ngModel)]="employee.position" name="position"/></label><br>
+    <label>Department: <input [(ngModel)]="employee.department" name="department"/></label><br>
+
+    <button type="button" (click)="updateEmployee()">Update Employee</button>
+  </form>
+</div>
